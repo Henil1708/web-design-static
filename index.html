@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touchcore Systems Private Limited</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- google fonts- roboto slab & poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- google fonts- roboto slab & poppins -->
+    
+    <!-- charts js script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- charts js script -->
+
+</head>
+<body class="body-flex">
+    <header>
+        <nav class="bottom-sticky">
+            <!-- upper-nav links  starts -->
+            <ul class="nav-links upper-nav m-hidden">
+                <li class="nav-link m-hidden">
+                    <a href="index.html">
+                        <img src="./assets/images/logo.png" alt="logo" class="logo">
+                    </a>
+                </li>
+                <li class="nav-link"><i class="fas fa-search "></i></li>
+            </ul>
+            <!-- upper-nav links ends  -->
+
+            <!-- mid-nav links  starts -->
+            <ul class="mid-nav">
+                <li class="nav-link  active">
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="index.html">
+                        <i class="fas fa-id-card"></i>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="index.html">
+                       <i class="far fa-list-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="index.html">
+                       <i class="far fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-link d-hidden">
+                    <a href="index.html">
+                      <i class="fas fa-search "></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- mid-nav links ends  -->
+
+            <!-- mid-nav links  starts -->
+            <ul class="end-nav m-fixed-top-right">
+                <li class="nav-link  notification">
+                    <a href="index.html">
+                        <i class="far fa-bell"></i>
+                        <span class="notification-indicator"> </span>
+                    </a>
+                </li>
+                <li class="nav-link m-hidden">
+                    <a href="index.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+                
+            </ul>
+            <!-- mid-nav links ends  -->
+        </nav>
+    </header>
+    <main class="main-flex">
+        <section class="main-one">
+            <div class="main-one-wrapper">
+                <div class="cred">
+                    <div>
+                        <img src="https://i.pravatar.cc/70" alt="avatar" class="avatar">
+                    </div>
+                    <div class="details">
+                        <h1>Hi Mike,</h1>
+                        <h5 class="font-calibri">welcome back.</h5>
+                    </div>
+                </div>
+                <div class="stats-info">
+                    <h5 class="days">Today</h5>
+                    <div class="flex">
+                        <div>
+                            <h1 class="font-calibri">$19,892</h1>
+                            <p class="font-calibri">Account Balance</p>
+                        </div>
+                        <div class="m-flex-row">
+                            <div class="stats-wrapper">
+                                <h4 class="font-calibri">$4,000</h4>
+                                <p class="font-calibri">Year-to-date <span class="m-hidden font-calibri">Contributions</span></p>
+                            </div>
+                            <div class="stats-wrapper">
+                                <h4 class="font-calibri">$1,892</h4>
+                                <p class="font-calibri">Total Interest</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="drop-down font-poppins">
+                        <p>I want to <span class="d-hidden">...</span><span class="m-hidden" style="margin-left: 3px;"> <i class="fas fa-caret-down"></i></span></p>
+                   </div>
+                </div>
+                <div class="stats-info stats-bottom">
+                     <div class="recent-transactions">
+                        <h5 class="days">Recent Transactions</h5>
+                        <div class="transactions">
+                            <div>
+                                <p>2020-08-07</p>
+                                <h6>Withdrawal Transfer to Bank-XXX11</h6>
+                            </div>
+                            <div>
+                                <p>2020-07-21</p>
+                                <h6>Withdrawal Transfer to Bank-XXX11</h6>
+                            </div>
+                            <div>
+                                <p>2020-07-16</p>
+                                <h6>Withdrawal Transfer to Bank-XXX11</h6>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-two">
+            <div class="wrapper">
+                <div class="heading">
+                    <h5>Retirement Income</h5>
+                    <h3>Starting Year 2056</h3>
+                </div>
+                <div class="stats-upper">
+                    <div>
+                        <h1 class="font-calibri">$300,000</h1>
+                        <p>My Goal</p>
+                    </div>
+                    <div>
+                        <h1 class="font-calibri">59%</h1>
+                        <p>Goal Achieved</p>
+                    </div>
+                    <div>
+                        <h1 class="font-calibri">$300</h1>
+                        <p>Est. Monthly Income</p>
+                    </div>
+                </div>
+                <div class="bar-chart">
+                    <h4 class="font-calibri heading" >Contributions Overtime</h4>
+                    <div class="labels">
+                        <div class="">
+                            <p></p>
+                            <div>
+                                <h6>Employer: </h6>
+                                <h6>$73,500</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <p></p>
+                             <div>
+                                <h6>Employee: </h6>
+                                <h6> $52,500</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <p></p>
+                             <div>
+                                <h6>Total Interest: </h6>
+                                <h6>$244,313</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="stats-bottom">
+                    <h4 class="heading" >How do I compare to my peers?</h4>
+                    <h5 class="font-calibri sub-heading">These numbers represent current goal achievement</h5>
+                    <div class="data">
+                        <div class="details">
+                            <div class="detail">
+                                <h5>Age: <span>Under 30 </span></h5>
+
+                            </div>
+                            <div class="detail">
+                                <h5>Salary: <span>$20 - $30</span></h5>
+
+                            </div>
+                            <div class="detail">
+                                <h5>Gender: <span>Male </span></h5>
+
+                            </div>
+                        </div>
+                        <div class="doughnut-charts">
+                             <div>
+                                 <div class="item html">
+                                <h2>78<sup>%</sup></h2>
+                                <svg width="120"  xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                <title>Layer 1</title>
+                                <circle r="30.85699" cy="81" cx="81" stroke-width="6.2" stroke="#D3F7EE" fill="none"/>
+                                <circle class="circle_animation" r="30.85699" cy="81" cx="81" stroke-width="10" stroke="#22D6AA" fill="none"/>
+                                </g>
+                                </svg>
+                                <h3>Average</h3>
+                                
+                            </div>
+                             </div>
+                             <div>
+                                 <div class="item html">
+                                <h2>78<sup>%</sup></h2>
+                                <svg width="120"  xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                <title>Layer 1</title>
+                                <circle r="30.85699" cy="81" cx="81" stroke-width="6.2" stroke="#D3F7EE" fill="none"/>
+                                <circle class="circle_animation" r="30.85699" cy="81" cx="81" stroke-width="10" stroke="#22D6AA" fill="none"/>
+                                </g>
+                                </svg>
+                                <h3>Top</h3>
+                            </div>
+                             </div>
+                             <div>
+                                 <div class="item html">
+                                <h2>78<sup>%</sup></h2>
+                                <svg width="120"  xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                <title>Layer 1</title>
+                                <circle r="30.85699" cy="81" cx="81" stroke-width="6.2" stroke="#D3F7EE" fill="none"/>
+                                <circle class="circle_animation" r="30.85699" cy="81" cx="81" stroke-width="10" stroke="#22D6AA" fill="none"/>
+                                </g>
+                                </svg>
+                                <h3>Me</h3>
+                            </div>
+                             </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="main-three">
+            <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+        </section>
+    </main>
+
+    <!-- font awesome - script -->
+    <script src="https://kit.fontawesome.com/853a85cf7b.js" crossorigin="anonymous"></script>
+    <!-- font awesome - script -->
+
+    <script>
+  const labels = [
+    20,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60
+  ];
+
+  
+
+  const data = {
+    labels: labels,
+    datasets: [
+    {
+        label :false,
+        backgroundColor: 'darkblue',
+        borderColor: 'darkblue',
+        data: [30, 35,45,55,65,85,100]
+    },
+    {
+        label :false,
+        backgroundColor: 'blue',
+        borderColor: 'blue',
+        data: [30, 35,45,55,65,85,100]
+    },
+    {
+        label :false,
+      backgroundColor: '#84AEFF',
+      borderColor: '#84AEFF',
+      data: [30, 35,45,55,65,85,100]
+    },
+    ]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+         plugins: {
+            legend: {
+            display: false
+            }
+        },
+        x:{
+            stacked :true
+        },
+        y:{
+            stacked:true
+        }, 
+        scales: {
+            y: {
+                ticks: {
+                    // Include a dollar sign in the ticks
+                    callback: function(value, index, ticks) {
+                        if(value % 100 == 0 ){
+                            return '$' + value;
+                        }
+                    }
+                }
+            },  
+        }
+    }
+  };
+
+
+
+</script>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+
+
+<script>
+
+    
+    
+    // setup 
+   var thickness3 = {
+  id: "thickness",
+  beforeDraw: function (chart, options) {
+    let thickness = chart.options.plugins.thickness.thickness;
+    thickness.forEach((item,index) => {
+       chart.getDatasetMeta(0).data[index].innerRadius = item[0];
+       chart.getDatasetMeta(0).data[index].outerRadius = item[1];
+    });
+  }
+};
+
+var ctx3 = document.getElementById("myDoughChart3");
+
+var myDoughChart3 = new Chart(ctx3, {
+  type: "doughnut",
+  plugins: [thickness3],
+  data: {
+    datasets: [
+      {
+        data: [78, 22],
+        backgroundColor: [
+          "#22D6AA",
+          "#D3F7EE",
+        ],
+      }
+    ]
+  },
+  options: {
+      
+
+    plugins: {
+        legends :{
+           display:'none' 
+        },
+      thickness: {
+        thickness: [[100,140],[110,130]],
+      }
+    },
+  }
+});
+
+
+   var thickness2 = {
+  id: "thickness",
+  beforeDraw: function (chart, options) {
+    let thickness = chart.options.plugins.thickness.thickness;
+    thickness.forEach((item,index) => {
+       chart.getDatasetMeta(0).data[index].innerRadius = item[0];
+       chart.getDatasetMeta(0).data[index].outerRadius = item[1];
+    });
+  }
+};
+
+var ctx2 = document.getElementById("myDoughChart2");
+
+var myDoughChart2 = new Chart(ctx2, {
+  type: "doughnut",
+  plugins: [thickness2],
+  data: {
+    datasets: [
+      {
+        data: [95, 5],
+        backgroundColor: [
+          "#22D6AA",
+          "#D3F7EE",
+        ],
+      }
+    ]
+  },
+  options: {
+    plugins: {
+        
+        legends :{
+           display:'none' 
+        },
+      thickness: {
+        thickness: [[100,140],[110,130]],
+      }
+    },
+  }
+});
+
+   var thickness1 = {
+  id: "thickness",
+  beforeDraw: function (chart, options) {
+    let thickness = chart.options.plugins.thickness.thickness;
+    thickness.forEach((item,index) => {
+       chart.getDatasetMeta(0).data[index].innerRadius = item[0];
+       chart.getDatasetMeta(0).data[index].outerRadius = item[1];
+    });
+  }
+};
+
+var ctx1 = document.getElementById("myDoughChart1");
+
+var myDoughChart1 = new Chart(ctx1, {
+  type: "doughnut",
+  plugins: [thickness1],
+  data: {
+    datasets: [
+      {
+        data: [59, 41],
+        backgroundColor: [
+          "#22D6AA",
+          "#D3F7EE",
+        ],
+      }
+    ]
+  },
+  options: {
+      
+    plugins: {
+        legends :{
+           display:'none' 
+        },
+      thickness: {
+        thickness: [[100,140],[110,130]],
+      }
+    },
+  }
+});
+
+
+
+    </script>
+
+</body>
+</html>
