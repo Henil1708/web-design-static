@@ -467,55 +467,24 @@ main{
 }
 
 .main-two .wrapper .stats-bottom .data .details .detail h5{
+    font-size: 12px;
+    color: #000;
+}
+
+.main-two .wrapper .stats-bottom .data .dough-chart{
+    display: flex;
+    justify-content: center;
+}
+.main-two .wrapper .stats-bottom .data .dough-chart p {
+    text-align: center;
+    width: 100%;
     font-size: 13px;
     color: #000;
 }
 
-.main-two .wrapper .stats-bottom .data .doughnut-charts{
-     flex: 0.4;
-    display: flex;
-    /* max-width: min-content; */
-
-    /* min-width: 0; */
-}
-
 .main-three{
     flex: 0.4;
-}
-
-.main-three .slidecontainer {
-  width: 100%;
-}
-
-.main-three .slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.main-three .slider:hover {
-  opacity: 1;
-}
-
-.main-three .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #04AA6D;
-  cursor: pointer;
-}
-
-.main-three .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #04AA6D;
-  cursor: pointer;
+    padding-top: 55px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -536,7 +505,7 @@ main{
     }
     .main-one  {
         background-color: var(--white);
-        padding: 20px;
+        padding: 15px;
         padding-top: 50px;
     }
     .main-one .main-one-wrapper {
