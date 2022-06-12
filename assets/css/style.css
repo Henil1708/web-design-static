@@ -410,6 +410,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 55px;
+  padding-bottom: 30px;
 }
 
 .main-two .wrapper {
@@ -436,8 +437,8 @@ main {
 .main-two .wrapper .stats-upper {
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr)[3]; */
-    grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
 
@@ -554,9 +555,18 @@ main {
           flex: 0.7;
 }
 
-.main-two .wrapper .stats-bottom .data .details .detail {
+.main-two .wrapper .stats-bottom .data .details div:nth-child(1) {
   padding: 10px 0px;
   border-bottom: 2px solid whitesmoke;
+}
+
+.main-two .wrapper .stats-bottom .data .details div:nth-child(2) {
+  padding: 10px 0px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.main-two .wrapper .stats-bottom .data .details div:nth-child(3) {
+  padding: 10px 0px;
 }
 
 .main-two .wrapper .stats-bottom .data .details .detail h5 span {
@@ -585,10 +595,186 @@ main {
 }
 
 .main-three {
-  -webkit-box-flex: 0.4;
-      -ms-flex: 0.4;
-          flex: 0.4;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
   padding-top: 55px;
+}
+
+.main-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 55px 0px;
+}
+
+.main-three .wrapper {
+  width: 80%;
+}
+
+.main-three .wrapper .upper-section {
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--gray);
+  padding: 15px 20px;
+  color: #1a1919;
+}
+
+.main-three .wrapper .upper-section .details {
+  border-bottom: 0.5px solid #e7e7e7;
+  padding-bottom: 15px;
+}
+
+.main-three .wrapper .upper-section .details .detail {
+  margin-top: 20px;
+}
+
+.main-three .wrapper .upper-section .details .detail div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-three .wrapper .upper-section .details .detail div .rangeSLider {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 5px;
+  -webkit-appearance: none;
+  height: 4px;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.main-three .wrapper .upper-section .details .detail div .rangeSLider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid rgba(128, 128, 128, 0.185);
+}
+
+.main-three .wrapper .upper-section .details .detail div .box {
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-three .wrapper .upper-section .details .detail p {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.main-three .wrapper .upper-section .stats-details {
+  margin-top: 20px;
+}
+
+.main-three .wrapper .upper-section .stats-details .stats-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.main-three .wrapper .upper-section .stats-details .stats-detail p {
+  font-family: 'Poppins',sans-serif;
+}
+
+.main-three .wrapper .upper-section .button {
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 11px;
+  margin: 10px 0px;
+}
+
+.main-three .wrapper .upper-section a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--blue);
+}
+
+.main-three .wrapper .upper-section a:hover {
+  text-decoration: underline;
+}
+
+.main-three .wrapper .upper-section a .view-link {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 11px;
+  font-family: 'Poppins',sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-three .wrapper .upper-section a .view-link span {
+  margin-left: 5px;
+}
+
+.main-three .wrapper .bottom-section {
+  padding: 10px 15px;
+  border-left: 2px solid var(--lightBlue);
+  margin-top: 20px;
+}
+
+.main-three .wrapper .bottom-section h5 {
+  font-weight: 700;
+  color: #575656;
+}
+
+.main-three .wrapper .bottom-section h5.question {
+  color: #1a1919;
+}
+
+.main-three .wrapper .bottom-section p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.main-three .wrapper .bottom-section a {
+  text-decoration: none;
+}
+
+.main-three .wrapper .bottom-section a:hover {
+  text-decoration: underline;
+}
+
+.main-three .wrapper .bottom-section a p {
+  color: var(--blue);
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -601,7 +787,7 @@ main {
 
 @media only screen and (max-width: 768px) {
   main {
-    padding-bottom: 150px;
+    padding-bottom: 15%;
   }
   .main-flex {
     -webkit-box-orient: vertical;
@@ -652,6 +838,9 @@ main {
   .main-one .main-one-wrapper .stats-info .drop-down {
     width: 100%;
     text-align: center;
+  }
+  .main-two {
+    padding: 20px 10px;
   }
   .main-two .wrapper {
     max-width: 90%;
@@ -750,6 +939,24 @@ main {
   .main-two .wrapper .stats-bottom .sub-heading {
     font-size: smaller;
     margin-bottom: 10px;
+  }
+  .main-two .wrapper .stats-bottom .data .details div:nth-child(3) {
+    padding: 10px 0px;
+    border-bottom: 2px solid whitesmoke;
+  }
+  .main-three .wrapper {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .main-three .wrapper .upper-section {
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+  }
+  .main-three .wrapper .upper-section .button {
+    position: absolute;
+    left: 0px;
+    padding: 15px;
+    border-radius: 5px 5px 0px 0px;
   }
 }
 

@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Touchcore Systems Private Limited</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    
     <!-- google fonts- roboto slab & poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +14,8 @@
     
     <!-- charts js script -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
     <!-- charts js script -->
 
 </head>
@@ -225,7 +225,49 @@
 
         </section>
         <section class="main-three">
-            
+            <div class="wrapper">
+              <div class="upper-section">
+                <h4>Retirement Strategy</h4>
+                <div class="details">
+                  <div class="detail" >
+                    <p class="font-poppins">Employee Contribution</p>
+                    <div class="rangeContainer">
+                      <input type="range" class="rangeSLider" id="rangeSlider1" oninput="slider1()"  >
+                      <div class="box">
+                        <p>12%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detail">
+                    <p class="font-poppins">Retirement Age</p>
+                    <div class="rangeContainer">
+                      <input type="range" class="rangeSLider" id="rangeSlider2" oninput="slider2()" >
+                      <div class="box">
+                        <p>65</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stats-details">
+                  <div class="stats-detail">
+                    <p>Employer Contribution</p>
+                    <p>8.4%</p>
+                  </div>
+                  <div class="stats-detail">
+                    <p>Interest Rate</p>
+                    <p>5%</p>
+                  </div>
+                </div>
+                <button class="button">Update</button>
+                <a href="" class="m-hidden"><p class="view-link">View Help Docs <span><i class="fas fa-angle-right"></i></span></p></a>
+              </div>
+              <div class="bottom-section m-hidden">
+                  <h5 class="heading font-poppins">Are you considering a</h5>
+                  <h5 class="question font-poppins">Housing Advance?</h5>
+                  <p>Limited time reduce interest </p>
+                  <a href=""><p class="view-link">Learn more <span><i class="fas fa-angle-right"></i></span></p></a>
+              </div>
+            </div>
         </section>
     </main>
 
@@ -234,6 +276,24 @@
     <!-- font awesome - script -->
 
     <script>
+
+      const myslider1 = document.getElementById('rangeSlider1');
+      const myslider2 = document.getElementById('rangeSlider2');
+      
+      function slider1(){
+        var valPercent = (myslider1.value / 100)*100;
+        console.log(valPercent)
+        myslider1.style.background = `linear-gradient(to right, blue 0%, blue ${valPercent}%,  rgb(240, 240, 240) ${valPercent-100}%)`;
+
+      }
+      function slider2(){
+        var valPercent = (myslider2.value / 100)*100;
+        console.log(valPercent)
+        myslider2.style.background = `linear-gradient(to right, blue 0%, blue ${valPercent}%,  rgb(240, 240, 240) ${valPercent-100}%)`;
+
+      }
+
+
   const labels = [
     20,
     35,
@@ -329,10 +389,27 @@
 };
 
 var ctx3 = document.getElementById("myDoughChart3");
+const text3 = {
+  id:'conunter',
+  beforeDraw(chart, args, options){
+    const {ctx, chartArea: {top,bottom,left,right, width, height}} = chart;
+    ctx.save();
+    
+    ctx.fillStyle = 'gray';
 
+    ctx.font = '70px Poppins';
+    ctx.fontWeight ='bold';
+    ctx.textAlign = 'center';
+  
+    ctx.fillText('78',140,160,100,100);
+
+    ctx.font = '40px Poppins';
+    ctx.fillText('%',190,130,100,100);
+  }
+}
 var myDoughChart3 = new Chart(ctx3, {
   type: "doughnut",
-  plugins: [thickness3],
+  plugins: [thickness3,text3],
   data: {
     datasets: [
       {
@@ -370,9 +447,29 @@ var myDoughChart3 = new Chart(ctx3, {
 };
 
 var ctx2 = document.getElementById("myDoughChart2");
+
+const text2 = {
+  id:'conunter',
+  beforeDraw(chart, args, options){
+    const {ctx, chartArea: {top,bottom,left,right, width, height}} = chart;
+    ctx.save();
+    
+    ctx.fillStyle = 'gray';
+
+    ctx.font = '70px Poppins';
+    ctx.fontWeight ='bold';
+    ctx.textAlign = 'center';
+  
+    ctx.fillText('95',140,160,100,100);
+
+    ctx.font = '40px Poppins';
+    ctx.fillText('%',190,130,100,100);
+  }
+}
+
 var myDoughChart2 = new Chart(ctx2, {
   type: "doughnut",
-  plugins: [thickness2],
+  plugins: [thickness2,text2],
   data: {
     datasets: [
       {
@@ -411,9 +508,28 @@ var myDoughChart2 = new Chart(ctx2, {
 
 var ctx1 = document.getElementById("myDoughChart1");
 
+const text1 = {
+  id:'conunter',
+  beforeDraw(chart, args, options){
+    const {ctx, chartArea: {top,bottom,left,right, width, height}} = chart;
+    ctx.save();
+    
+    ctx.fillStyle = 'gray';
+
+    ctx.font = '70px Poppins';
+    ctx.fontWeight ='bold';
+    ctx.textAlign = 'center';
+  
+    ctx.fillText('59',140,160,100,100);
+
+    ctx.font = '40px Poppins';
+    ctx.fillText('%',190,130,100,100);
+  }
+}
+
 var myDoughChart1 = new Chart(ctx1, {
   type: "doughnut",
-  plugins: [thickness1],
+  plugins: [thickness1,text1],
   data: {
     datasets: [
       {
