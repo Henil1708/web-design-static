@@ -189,22 +189,44 @@
                     <h4 class="heading" >How do I compare to my peers?</h4>
                     <h5 class="font-calibri sub-heading">These numbers represent current goal achievement</h5>
                     <div class="data">
-                        <div class="details">
-                            <div class="detail">
-                                <h5>Age: <span>Under 30 </span></h5>
+                        <div class="details" >
+                            <div class="detail" >
+                                <h5>Age: <span>Under 30 </span> <span><i class="fas fa-caret-down"></i></span></h5>
 
                             </div>
                             <div class="detail">
-                                <h5>Salary: <span>$20 - $30</span></h5>
+                                <h5>Salary: <span>$20 - $30</span> <span><i class="fas fa-caret-down"></i></span></h5>
 
                             </div>
                             <div class="detail">
-                                <h5>Gender: <span>Male </span></h5>
-
+                                <h5>Gender: <span>Male </span> <span><i class="fas fa-caret-down"></i></span></h5>
                             </div>
                         </div>
+                        <div style="display: flex; " class="dough-chart">
+                          <div>
+                            <canvas id="myDoughChart3"  ></canvas>
+                            <p>Average</p>
+                          </div>
+                          <div >
+                            <canvas id="myDoughChart2"  ></canvas>
+                            <p>Top</p>
+                          </div>
+                          <div >
+                            <canvas id="myDoughChart1"></canvas>
+                            <p>Me</p>
+                          </div>
+                        </div>
                         <div class="doughnut-charts">
-                             <div>
+                          <!-- <div style="width:200px;">
+                           
+                          </div>
+                          <div>
+                            <canvas id="myDoughChart2"></canvas>
+                          </div>
+                          <div>
+                            <canvas id="myDoughChart1"></canvas>
+                          </div> -->
+                             <!-- <div>
                                  <div class="item html">
                                 <h2>78<sup>%</sup></h2>
                                 <svg width="120"  xmlns="http://www.w3.org/2000/svg">
@@ -220,7 +242,7 @@
                              </div>
                              <div>
                                  <div class="item html">
-                                <h2>78<sup>%</sup></h2>
+                                <h2>95<sup>%</sup></h2>
                                 <svg width="120"  xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                 <title>Layer 1</title>
@@ -233,7 +255,7 @@
                              </div>
                              <div>
                                  <div class="item html">
-                                <h2>78<sup>%</sup></h2>
+                                <h2>55<sup>%</sup></h2>
                                 <svg width="120"  xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                 <title>Layer 1</title>
@@ -242,7 +264,7 @@
                                 </g>
                                 </svg>
                                 <h3>Me</h3>
-                            </div>
+                            </div> -->
                              </div>
 
                         </div>
@@ -366,7 +388,7 @@ var myDoughChart3 = new Chart(ctx3, {
   data: {
     datasets: [
       {
-        data: [78, 22],
+        data: [59, 41],
         backgroundColor: [
           "#22D6AA",
           "#D3F7EE",
@@ -375,8 +397,8 @@ var myDoughChart3 = new Chart(ctx3, {
     ]
   },
   options: {
-      
-
+       responsive: false,
+        maintainAspectRatio: true,
     plugins: {
         legends :{
            display:'none' 
@@ -388,8 +410,7 @@ var myDoughChart3 = new Chart(ctx3, {
   }
 });
 
-
-   var thickness2 = {
+  var thickness2 = {
   id: "thickness",
   beforeDraw: function (chart, options) {
     let thickness = chart.options.plugins.thickness.thickness;
@@ -401,7 +422,6 @@ var myDoughChart3 = new Chart(ctx3, {
 };
 
 var ctx2 = document.getElementById("myDoughChart2");
-
 var myDoughChart2 = new Chart(ctx2, {
   type: "doughnut",
   plugins: [thickness2],
@@ -418,7 +438,8 @@ var myDoughChart2 = new Chart(ctx2, {
   },
   options: {
     plugins: {
-        
+         responsive: true,
+        maintainAspectRatio: true,
         legends :{
            display:'none' 
         },
@@ -457,7 +478,8 @@ var myDoughChart1 = new Chart(ctx1, {
     ]
   },
   options: {
-      
+       responsive: false,
+        maintainAspectRatio: true,
     plugins: {
         legends :{
            display:'none' 
